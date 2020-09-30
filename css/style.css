@@ -1,0 +1,179 @@
+/*Reset of default styles*/
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial;
+}
+
+
+/*Header*/
+
+h1{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #4A87E8;
+    font-size: 20px;
+    text-align: center;
+}
+
+h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #4A87E8;
+    text-align: center;
+}
+
+/* Gallery */
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto; /*Automatic margin on both right end left*/
+    text-align: center;
+}
+
+.card{
+    display: inline-block;
+    width: 230px;
+    margin: 10px;
+    border: 1px solid #4A87E8;
+}
+
+
+#card-1{
+    background-image: url("../img/Border_Collie.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+}
+
+#card-2{
+    background-image: url("../img/Poodle.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+}
+
+#card-3{
+    background-image: url("../img/Pastor_Alemão.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+}
+
+#card-4{
+    background-image: url("../img/Golden_Retriever.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+}
+
+#card-5{
+    background-image: url("../img/Dobermann.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+}
+
+#card-6{
+    background-image: url("../img/Pastor_de_Shetland.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+}
+
+#card-7{
+    background-image: url("../img/Labrador.jpg");
+    background-size: cover;
+    background-position: top;
+    height: 175px;
+}
+
+#card-8{
+    background-image: url("../img/Pappilon.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 175px;
+}
+
+.card-description{
+    padding: 10px 5px;
+}
+
+.btn{
+    display: block;
+    background-color: #4A87E8;
+    color: #FFF;
+    margin-top: 15px;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid transparent; /*Técnica para alterar apenas a cor com  hover*/
+    font-weight: bold;
+    transition: .5s;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #FFF;
+    color: #4A87E8;
+    border-color: #4A87E8;
+}
+
+
+/*Modal - Popup*/
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgb(242, 242, 242, 0.5);
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+
+  .modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .modalDialog > div {
+    width: 400px;
+    position: 10% auto;
+    margin: 200px 400px 200px 400px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: #fff; 
+  }
+
+  .close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 26px;
+    position: fixed;
+    text-align: center;
+    margin: -25px 400px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 1px 1px 3px #000;
+  }
+  
+  .close:hover {
+    background: #4A87E8;
+  }
+
+  .description{
+        text-align: justify; 
+        font-family: Arial;
+        font-size: 18px;
+        line-height: 30px;
+  }
+
+  .moreDetails{
+      text-decoration: none;
+      
+  }
